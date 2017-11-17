@@ -1,5 +1,5 @@
 ---
-title: Data migration
+title: Exercise - Data migration
 tagline:
 ---
 
