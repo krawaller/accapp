@@ -1,0 +1,1 @@
+This is the "practical JS application development course" outlined in https://trello.com/b/fj6j9Y3x/accelerated-learning-ffs
