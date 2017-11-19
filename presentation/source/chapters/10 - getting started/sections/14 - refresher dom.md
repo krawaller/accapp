@@ -1,5 +1,5 @@
 ---
-title: DOM references and manipulations
+title: DOM nodes
 tagline: node juggling
 ---
 
@@ -9,6 +9,7 @@ Let's refresh...
 
 * how to get references to DOM nodes
 * how to manipulate a DOM node
+* how to create DOM nodes
 
 ~~~~
 
@@ -109,3 +110,26 @@ node.getAttribute("data-ref"); // "Ek#AfZW2"
 ```javascript
 node.setAttribute("data-ref","someNewRef");
 ```
+
+~~~
+
+item)
+
+Finally, let's see how we **create DOM nodes**!
+
+```
+let newNode = document.createElement("div");
+```
+
+Just instantiating a node like this doesn't do anything - it **isn't connected to the document**.
+
+~~
+
+In order to accomplish that we need to **append** or **prepend** the node to a parent node:
+
+```
+let existingNode = document.getElementById("someId");
+existingNode.appendChild(newNode);
+```
+
+There is of course a corresponding `.prependChild` too.
