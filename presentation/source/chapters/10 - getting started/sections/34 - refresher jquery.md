@@ -132,6 +132,14 @@ newCollection.appendTo(selectorForParent);
 
 ~~~
 
+Of course we could have simply used the `.html` method:
+
+```javascript
+$(selectorForParent).html(stringWithNewHtml);
+```
+
+~~~
+
 item)
 
 **Event listeners** are added using the `on` method:
