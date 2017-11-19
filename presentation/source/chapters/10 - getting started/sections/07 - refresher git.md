@@ -36,8 +36,7 @@ list)
 
 ~
 
-In Git, committing is a two-step process 
-<small>(It is also possible to do it with a single command)</small>
+In Git, committing is a two-step process
 
 <img class="img_no_border"
      src="resources/images/adding_and_committing.png"
@@ -142,54 +141,6 @@ index 9fe5927..e826a45 100644
 
 ~
 
-<h3 class="lowercase">git diff</h3>
-```diff
--    for (i = 0; i < 10; i++)
-+    for (i = 0; i < n; i++)
-```
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="warning-border" style="margin: 10px">
-                <span class="warning-text">Red</span> and the "-", indicate removed lines
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="info-border" style="margin: 10px">
-                <span class="info-text">Green</span> and the "+" indicate added lines
-            </div>
-        </div>
-    </div>
-</div>
-
-~
-
-By default diff only shows unstaged changes;
-use the staged option to see the staged changes
-
-```diff
-$ git add src/main.c
-$ git diff --staged
-```
-
-```diff
-diff --git a/src/main.c b/src/main.c
-index 5f8a873..81f2948 100644
---- a/src/main.c
-+++ b/src/main.c
-@@ -1,5 +1,5 @@
- #include "util.h"
-
- int main() {
--    print_ten_times("Hello, world!\n");
-+    print_n_times("Hello, world!\n", 10);
-}
-```
-
-~
-
-~
-
 <h3 class="lowercase">git log</h3>
 
 Shows a log of all the commits, most recent commit first
@@ -263,19 +214,13 @@ and organizations
 
 ~
 
-## Creating a Github account
+### Creating a Github account
 
-Getting such an account is free of charge, and easy. Here's how.
+Creating an account is free, and easy.
 
-1. Go to `http://github.com/`.
-2. Some way down the page, in the middle, is a big blue button labeled
-   "Plans, Prising and Signup". Click it.
-3. You're taken to a new page. At the top and to the right is a button
-   labeled "Create a free account". Click it.
-4. In the form on the next page, fill in the requested details. Choose
-   your username wisely; it will become a part of the URLs of all your
-   repositories.
-5. Click "Create an account". Done.
+Go to `https://github.com/`.
+
+> Follow the directions
 
 ~
 
@@ -292,33 +237,10 @@ $ git remote add origin https://github.com/<user>/<repo>.git
 Since you can have multiple remotes, you have to
 specify a name as well as the address
 
-<div class="info-border">
-    The convention used by almost all Git users is to
-    call the central repository remote origin
-</div>
-
+>    The convention used by almost all Git users is to
+     call the central repository remote origin
 
 ~
-
-## Uploading a repo to GitHub
-
-1. Create a public repository `exercise-2` using your Github account. (If you
-   don't have a Github account, see the instructions before Exercise 1.)
-2. Follow the instructions from Github to add a `remote`. (Use "HTTP", not
-   "SSH", as your protocol.) `push` your repository. Don't forget the `-u` flag,
-   suggested by Github. You may have to consider proxy settings to make this
-   step work, if you're pushing from inside corporate walls.
-3. Use the `branch` command without arguments. Same branches as before. Now try
-   `branch` with the option `-a`. A new branch, `remotes/origin/master`, should
-   show up.
-4. Do a `checkout` of your `new-feature` branch.
-5. Do a `push` to `origin new-feature`, thus creating a new branch `new-feature`
-   at Github, too.
-   
-~
-
-
-### The first push
 
 *Pushing is taking commits we have locally and
 copying them to a remote*
@@ -330,120 +252,6 @@ then our first push should use the -u flag
 $ git push -u origin master
 ```
 
-<img src="resources/images/dags/dag-the_first_push.png"
+<img src="resources/images/dag-the_first_push.png"
      alt="The first push"
      class="img_no_border no_margin">
-
-~
-
-### Cloning
-
-The `clone` command is used when you want to *get
-a local copy of a remote repository*; it also sets
-up origin to point to the remote for you
-
-```diff
-$ git clone https://github.com/<user>/<repo>.git
-```
-
-<img src="resources/images/dags/dag-cloning.png"
-     alt="Cloning"
-     class="img_no_border no_margin"
-     style="max-height: 200px">
-
-<div class="warning-border">
-    You use `clone` once to get an initial copy of
-    the remote; later you'll be using `pull` to
-    synchronize.
-</div>
-
-~
-
-### Sharing changes (1)
-
-After you have done some work locally, you will
-have one or more commits that the central
-repository does not have
-
-<img src="resources/images/dags/dag-sharing_changes_1.png"
-     alt="Sharing Changes"
-     class="img_no_border no_margin"
-     style="max-height: 300px">
-
-In this case, we need to copy the one extra,
-new commit over to the central server
-
-~
-
-### Sharing changes (2)
-
-The push command is used to do this:
-
-```diff
-$ git push origin master
-```
-
-<img src="resources/images/dags/dag-sharing_changes_2.png"
-     alt="Sharing Changes"
-     class="img_no_border no_margin"
-     style="max-height: 300px">
-
-<div class="info-border">
-    You don't need to tell Git which commit(s)
-    it needs to copy. It always works that
-    out for you. :)
-</div>
-
-~
-
-### Getting the latest changes (1)
-
-At this point, the central repository has a commit
-that Norbert the New Guy doesn't have in his local
-copy of the repository
-
-<img src="resources/images/dags/dag-getting_the_latest_changes_1.png"
-     alt="Sharing Changes"
-     class="img_no_border no_margin"
-     style="max-height: 300px">
-
-We need to copy that new commit from the central
-repository into the local copy
-
-~
-
-### Getting the latest changes (2)
-
-The `pull` command is used to fetch the latest
-changes and merge them into our local copy
-
-```diff
-$ git pull
-```
-
-<img src="resources/images/dags/dag-getting_the_latest_changes_2.png"
-     alt="Sharing Changes"
-     class="img_no_border no_margin"
-     style="max-height: 300px">
-
-~
-
-### Getting the latest changes (3)
-
-`pull`  
-really just calls two other commands for us:
-
-`fetch`  
-This command fetches all of the changes from a
-remote that we don't know about locally
-
-`merge`  
-We already saw this one! :)
-
-<div class="info-border">
-    The exact same mechanism we used to merge local
-    branches is also used to merge commits from a
-    remote. Neat, huh? :)
-</div>
-
-~

@@ -108,7 +108,7 @@ item)
 Now we must tell our remote repo about the changes we've made:
 
 ```
-git push origin master
+git push -u origin master
 ```
 
 If you reload your repo in the weppage, you should now see your files!
