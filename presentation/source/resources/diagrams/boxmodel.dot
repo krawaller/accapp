@@ -1,0 +1,14 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+  subgraph cluster_margin {
+    label = "Margin"
+    subgraph cluster_border {
+      label = "Border"
+      subgraph cluster_padding {
+        label = "Padding"
+        Content
+      }
+    }
+  }
+}
