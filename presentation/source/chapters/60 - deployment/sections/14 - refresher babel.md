@@ -76,7 +76,7 @@ towards is known as **ES2015**.
 The browser is still one of the most common places to see JavaScript,
 but most browsers only support bits and pieces of ES2015.
 
-![alt text](resources/browsers.png)
+![alt text](resources/images/browsers.png)
 
 ~
 
@@ -88,7 +88,7 @@ question)
 
 answer)
 
-![alt text](resources/babel.png)
+![alt text](resources/images/babel.png)
 
 ~
 
@@ -96,7 +96,7 @@ Regardless of whether you're running JavaScript in the browser, or
 if you're running it through Node, you can always *transpile* your
 code to the current standard, ES5.
 
-![alt text](resources/transpile.png)
+![alt text](resources/images/transpile.png)
 
 *Note: 'transpile' is a meaningless term that just means 'compile' - it
 sounds hipper though.*

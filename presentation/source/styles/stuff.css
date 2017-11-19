@@ -29,3 +29,10 @@
   margin-right: 10px;
   content: "✅"
 }
+
+.reveal section img.img_no_border {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+

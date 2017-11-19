@@ -300,7 +300,7 @@ specify a name as well as the address
 
 ~
 
-#Uploading a repo to GitHub 
+## Uploading a repo to GitHub
 
 1. Create a public repository `exercise-2` using your Github account. (If you
    don't have a Github account, see the instructions before Exercise 1.)
