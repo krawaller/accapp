@@ -15,6 +15,7 @@ Let's see how some **common tasks** are done with jQuery:
 
 * node references
 * node manipulation
+* node creation
 * event handling
 * event delegation
 
@@ -47,6 +48,7 @@ collection.html("<strong>verboten</strong>");
 collection.text("unavailable");
 collection.addClass("hide");
 collection.attr("data-ref","Ek#AfZW2");
+collection.empty(); // killing all children
 ```
 
 ~~
@@ -70,15 +72,62 @@ for(let node in nodes){
 
 ...can be done like this in jQuery:
 
-```
+```javascript
 let collection = $(".french");
 collection.html("<em>click to translate</em>");
 ```
 
 Commonly we skip the variable and **chain** instead:
 
-```
+```javascript
 $(".french").html("<em>click to translate</em>");
+```
+
+~~~
+
+item)
+
+Now to see how we **create new elements** with jQuery!
+
+Normally, if you **pass a string** to jQuery, it'll treat it as a **CSS selector** and collect all matching element:
+
+```javascript
+let collection = $(".blogpost > p:first-child");
+```
+
+~~~~
+
+However, if we pass in a string containing HTML code, jQuery will instead **create the matching element**!
+
+```javascript
+let newCollection = $("<span>");
+```
+
+~~~~
+
+This HTML code can contain multiple elements as well as attributes:
+
+```javascript
+let newCollection = $(`
+  <div class="container">
+    <h2>Hello world!</h2>
+    <p>All this was created in a multiline string sent to jQuery!</p>
+  </div>
+`);
+```
+
+~~~
+
+Then we can **append the new node**:
+
+```javascript
+$(selectorForParent).append(newCollection);
+```
+
+There's also a reversed syntax:
+
+```
+newCollection.appendTo(selectorForParent);
 ```
 
 ~~~
