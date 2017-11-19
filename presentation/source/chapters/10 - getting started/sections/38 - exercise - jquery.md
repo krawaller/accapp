@@ -1,11 +1,11 @@
 ---
 title: Exercise - jQuerify
-tagline: moo
+tagline: Drinking the cool-aid
 ---
 
 <div class="goal"></div>
 
-Goal: clean up code, use jQuery
+Goal: Clean up our code by using jQuery
 
 ~~~~
 
@@ -20,25 +20,33 @@ list)
 
 item)
 
-link to jquery via CDN in script element int html file omg omg
+**Bring jQuery into the project** via a script element in `index.html` referencing the **CDN version**:
+
+```
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+```
+
+~~~
+
+Remember to place that script element **before `code.js`**, otherwise we won't be able to use jQuery in our code!
 
 ~~~
 
 item)
 
-Refactor `changeStarRating`!
+With jQuery brought in, time to start using it! Start by **refactoring `changeStarRating`**, using jQuery instead of naked DOM manipulation.
 
 ~~~
 
 item)
 
-Refactor `renderMovie`!
+Next, refactor **`renderMovie`** to use jQuery instead.
 
 ~~
 
 item)
 
-Refactor event listeners!
+Finally, hook up the **event listeners** with jQuery. The star rating is a prime candidate for some **event delegation**!
 
 ~~
 
