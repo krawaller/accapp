@@ -1,11 +1,18 @@
 ---
-title: Package.JSON [TODO - cut down]
+title: Package.JSON
 tagline: The heart
 ---
 
+Node.js also comes with a package manager:
+```bash
+$ npm
+  
+  Usage: npm <command>
+```
 
-### Easy to start working with
+~
 
+### Installing a package with npm
 To install a package you just type:
 
 ```
@@ -19,12 +26,26 @@ dependencies, if any.
 
 ~
 
-### Doing it for an upcoming project
+Packages can also be installed globally:
+
+```bash
+$ npm install -g eslint
+```
+
+~
+
+We can setup a `package.json` file to track dependencies
+in our project.
+
+~
+
+### Initializing package.json
 
 Getting started with a new project is simple:
-```
+```bash
 npm init
 ```
+
 This initializes the folder as an Node.js
 project by creating a package.json in it.
 
@@ -58,6 +79,8 @@ Using the `--save` flag we can now save the dependency in our
 ```
 npm install --save react
 ```
+
+- As of npm 5.0.0 `--save` is the default behaviour.
 
 ~
 
@@ -187,38 +210,3 @@ npm run printme
 
 This just runs our pointless command that we defined in `printme`
 
-~
-
-### Let's make a more useful example
-
-Adding a test script to `package.json` instead:
-
-```json
-{
-  "dependencies": {},
-  "devDependencies": {
-      "mocha": "^3.1.2",
-      "babel-cli": "^6.18.0",
-      "babel-preset-es2015": "^6.18.0",
-  },
-  "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
-  }
-}
-```
-
-*This script will by convenience look for a folder named `test` and run all the test files.*
-
-~
-
-### Running the test script
-
-```
-npm run test
-```
-or
-```
-npm test
-```
-*The later is a shortcut provided by npm. You can name a script to
-whatever you want but this shortcut only works for `test` and `start`.*
