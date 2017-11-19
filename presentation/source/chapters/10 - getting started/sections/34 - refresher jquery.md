@@ -1,6 +1,6 @@
 ---
 title: jQuery refresher
-tagline:
+tagline: What the fuzz is about
 ---
 
 You've likely come across **jQuery**, a library that **makes the DOM easier** to work with.

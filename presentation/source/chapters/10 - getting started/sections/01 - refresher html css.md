@@ -1,5 +1,5 @@
 ---
-title: CSS refresher
+title: "CSS refresher [TODO: layout]"
 tagline: Some useful patterns
 ---
 

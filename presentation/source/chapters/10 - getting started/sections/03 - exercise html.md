@@ -1,5 +1,5 @@
 ---
-title: Exercise - static content
+title: "Exercise - static content [TODO: screenshot]"
 tagline: Laying the foundation
 ---
 

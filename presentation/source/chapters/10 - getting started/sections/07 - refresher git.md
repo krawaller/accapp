@@ -1,5 +1,5 @@
 ---
-title: Git and Github
+title: "Git and Github [TODO: cut down]"
 tagline: The tools of the trade
 ---
 

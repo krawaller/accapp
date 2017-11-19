@@ -1,5 +1,5 @@
 ---
-title: Exercise - add user rating
+title: "Exercise - add user rating [TODO: finish]"
 tagline: Because your opinion matters
 ---
 
