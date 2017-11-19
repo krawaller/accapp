@@ -1,5 +1,5 @@
 ---
-title: Babel
+title: Babel [TODO - cut down]
 tagline:
 ---
 

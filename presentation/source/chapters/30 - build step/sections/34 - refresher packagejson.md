@@ -1,5 +1,5 @@
 ---
-title: Package.JSON
+title: Package.JSON [TODO - cut down]
 tagline: The heart
 ---
 

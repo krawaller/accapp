@@ -1,5 +1,5 @@
 ---
-title: Continuous integration and Travis
+title: Continuous integration and Travis [TODO - cut down]
 tagline:
 ---
 

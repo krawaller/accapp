@@ -1,5 +1,5 @@
 ---
-title: Exercise - Webpack
+title: Exercise - Webpack [TODO - finish]
 tagline: 
 ---
 

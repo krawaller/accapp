@@ -1,5 +1,5 @@
 ---
-title: Exercise - Netlify
+title: Exercise - Netlify [TODO - finish]
 tagline:
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Exercise - ESLint
+title: Exercise - ESLint [TODO - finish]
 tagline:
 ---
 

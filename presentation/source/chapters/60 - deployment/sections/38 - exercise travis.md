@@ -1,5 +1,5 @@
 ---
-title: CI exercise
+title: CI exercise [TODO - cut down]
 ---
 
 In this exercise we'll look at a couple of different CI options.
