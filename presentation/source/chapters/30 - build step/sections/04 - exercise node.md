@@ -1,5 +1,5 @@
 ---
-title: Exercise - Install Node [TODO - finish]
+title: Exercise - Install Node
 tagline:
 ---
 
@@ -10,11 +10,30 @@ Goal: Have NodeJS installed locally on your machine
 
 ~
 
-TODO instructions
+Goto https://nodejs.org/
 
-mention how Node command prompt is useless
+Download the "Current Version"
+
+![Node Picture](resources/images/node_download.png)
 
 ~
+
+Click through the installer.
+
+~
+
+You'll see that node has installed a few things in the start menu:
+
+![node-start](resources/images/node_start.png)
+
+~
+
+All of these are a bit useless, just use node and npm directly.
+
+![node-git-bash](resources/images/node_bash.png)
+
+~
+
 
 <div class="checklist"></div>
 
