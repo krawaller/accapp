@@ -62,6 +62,11 @@ This will transition you to `github.com/yourusername/yourreponame`. Here, make s
 
 ~~~
 
+**If you get tired of typing your password all the time:**
+
+You can switch your remote to use **ssh** if you have time left after finishing the exercise.
+
+~~~
 item)
 
 Now we need to add the Github repo as a **remote** in our local one! In the terminal, while somewhere inside your local gitrepo, type:
