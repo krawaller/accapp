@@ -22,8 +22,17 @@ function goBoom(){
   alert("You pushed the button. BOOM goes the world!");
 }
 
-node.addEventListener("click",goBoom);
+node.addEventListener("click", goBoom);
 ```
+~~~
+
+Remember to pass in a **reference** to the event handler, as opposed to **executing it**!
+
+```javascript
+// this is wrong!
+node.addEventListener("click", goBoom());
+```
+
 
 ~~
 
