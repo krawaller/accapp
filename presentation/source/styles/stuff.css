@@ -29,3 +29,35 @@
   margin-right: 10px;
   content: "✅"
 }
+
+
+
+
+
+.reveal img[src^="resources/diagrams/"] {
+  background-color: #EEE;
+  border-radius: 13px;
+  padding: 7px;
+}
+
+
+
+.reveal .equality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal .equality img {
+  border: 0;
+  height: 140px;
+  display: inline-block;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal .equality span {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 70px;
+}

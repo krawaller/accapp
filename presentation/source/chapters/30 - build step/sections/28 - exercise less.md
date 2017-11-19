@@ -44,9 +44,9 @@ If you see a LESS version number, you're ok!
 
 item)
 
-Now we need to **add a LESS file**!
+Now we need to **add a LESS file**! Simply **copy the CSS file** but call it `.less` instead.
 
-Simply **copy the CSS file** but call it `.less` instead.
+![](resources/images/lessfile.png)
 
 ~~
 

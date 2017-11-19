@@ -1,0 +1,9 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+  SASS -> compiler
+  LESS -> compiler
+  compiler -> CSS
+
+  compiler [shape="box"]
+}
