@@ -2,6 +2,7 @@
 title: Git and Github
 tagline: The tools of the trade
 ---
+
 ~
 
 ## First-time setup
