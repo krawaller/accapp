@@ -1,6 +1,6 @@
 ---
-title: Exercise - Build step [TODO - finish]
-tagline:
+title: Exercise - Build step
+tagline: Plugging in the pipe
 ---
 
 <div class="goal"></div>
