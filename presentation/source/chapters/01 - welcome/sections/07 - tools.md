@@ -45,7 +45,7 @@ Just navigate to your main projects folder in a terminal and type:
 
 ...and voila, all your projects are published at `http://localhost:8000`!
 
-But, we'll get to this too down the road.
+But, we'll get to this too further down the road.
 
 ~~~
 
