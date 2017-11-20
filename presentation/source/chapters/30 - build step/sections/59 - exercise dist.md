@@ -19,4 +19,4 @@ You are done when...
 
 * There's a `distribution` folder
 * That folder contains no source files
-* You can move that folder and the app still works
+* You can copy just that folder somewhere else and the app still works
