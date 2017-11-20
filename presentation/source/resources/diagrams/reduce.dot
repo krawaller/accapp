@@ -1,0 +1,9 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+  list -> reduce
+  seed -> reduce
+  iterator -> reduce
+  reduce -> value
+  reduce [shape=rectangle]
+}

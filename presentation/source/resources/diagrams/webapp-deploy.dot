@@ -1,0 +1,14 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+
+  webapp [label="web app"]
+
+  webapp -> browser
+  webapp -> phonegap -> smartphone
+  webapp -> electron -> desktop
+
+  phonegap, electron [shape=box]
+
+  {rank=same; browser,smartphone,desktop}
+}

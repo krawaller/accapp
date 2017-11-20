@@ -1,0 +1,25 @@
+digraph {
+  bgcolor = transparent;
+  rankdir = LR;
+  list, seed
+  {rank=same; list,seed}
+  subgraph cluster_reducer {
+    label="reducer"
+    iterator1, iterator2, iterator3 [label="iterator",shape=box]
+    item1 -> iterator1 -> value1
+    item2 -> iterator2 -> value2
+    item3 -> iterator3 -> value3
+    value1 -> iterator2:w
+    value2 -> iterator3:w
+    {rank=same; item1, item2, item3}
+    {rank=same; iterator1, iterator2, iterator3}
+    {rank=same; value1, value2, value3}
+  }
+  seed -> item1 [color=transparent]
+  seed -> list [color=transparent]
+  seed -> iterator1
+  list -> item1
+  list -> item2
+  list -> item3
+  value3 -> returnVal
+}

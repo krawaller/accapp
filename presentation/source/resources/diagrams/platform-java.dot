@@ -1,0 +1,23 @@
+digraph {
+  rankdir = TD
+  bgcolor = transparent
+
+  Web [label="The Web Platform"]
+
+  Web -> HTML
+  Web -> CSS
+  Web -> JS
+  Web -> Java [style=dashed]
+
+  Java [style=dashed]
+
+  HTML -> htmldesc [dir=none]
+  CSS -> cssdesc [dir=none]
+  JS -> jsdesc [dir=none]
+  Java -> javadesc [dir=none,style=dashed]
+
+  htmldesc [shape=box;label="Content"]
+  cssdesc [shape=box;label="Style &\nLayout"]
+  jsdesc [shape=box;label="Behaviour"]
+  javadesc [shape=box;style=dashed;label="Content, Style &\nBehaviour"]
+}

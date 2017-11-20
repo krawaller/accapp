@@ -1,0 +1,16 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+
+  frontend -> backend [dir=back;label="generates"]
+
+  frontend -> frontstuff [dir=none]
+  backend -> backstuff [dir=none]
+
+  frontstuff [shape=box;label="UI"]
+
+  backstuff [shape=box;label="business logic,\ndatabase"]
+
+  {rank=same;frontend,frontstuff}
+  {rank=same;backend,backstuff}
+}

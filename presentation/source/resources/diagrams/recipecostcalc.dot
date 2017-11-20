@@ -1,0 +1,7 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+  recipe -> costOfRecipe -> cost
+  shop -> costOfRecipe
+  costOfRecipe [shape=box]
+}

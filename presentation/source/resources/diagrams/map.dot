@@ -1,0 +1,8 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+  list -> map
+  iterator -> map
+  map -> newList
+  map [shape=rectangle]
+}

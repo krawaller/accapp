@@ -1,0 +1,20 @@
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+
+  webapp [label="web app"]
+
+  webapp -> compiler [color=red]
+  compiler [shape=box,color=red,fontcolor=red]
+  compiler:e -> smartphone [constraint=false,color=red]
+  compiler:e -> desktop [constraint=false,color=red]
+
+  webapp -> browser
+  webapp -> phonegap -> smartphone
+  webapp -> electron -> desktop
+
+  phonegap, electron [shape=box]
+
+  {rank=same; browser,smartphone,desktop}
+  {rank=same; webapp, compiler}
+}

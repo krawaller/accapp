@@ -1,0 +1,18 @@
+digraph {
+  rankdir = TD
+  bgcolor = transparent
+
+  Web [label="The Web Platform"]
+
+  Web -> HTML
+  Web -> CSS
+  Web -> JS
+
+  HTML -> htmldesc [dir=none]
+  CSS -> cssdesc [dir=none]
+  JS -> jsdesc [dir=none]
+
+  htmldesc [shape=box;label="Content"]
+  cssdesc [shape=box;label="Style &\nLayout"]
+  jsdesc [shape=box;label="Behaviour"]
+}
