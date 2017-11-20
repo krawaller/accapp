@@ -91,7 +91,7 @@ Connect it via a **link element** in the head of `index.html`.
 
 Now add some CSS in that file to...
 
-* make the site **centered vertically**
+* make the site **centered horisontally**
 * lay it out in **two columns**
 * **size the image** so it isn't too big or small
 * tweak the rest as you please!
