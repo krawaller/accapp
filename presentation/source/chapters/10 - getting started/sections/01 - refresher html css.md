@@ -1,28 +1,7 @@
 ---
-title: "CSS refresher [TODO: layout]"
+title: "CSS refresher"
 tagline: Some useful patterns
 ---
-
-**CSS** is really made up of **two different things**:
-
-* **selectors** which describes a **subset of elements** in the document.
-* **style rules** which says something about what those elements should **look like**.
-
-~~~
-
-Selectors and style rules **go together in pairs**:
-
-```
-selector {
-  stylerules
-}
-
-anotherSelector {
-  moreStylerules
-}
-```
-
-~~
 
 list)
 
@@ -30,20 +9,24 @@ Let's repeat a few **useful CSS patterns**:
 
 * packing the box
 * centering a block horisontally
-* creating a column layout
+* selecting via attributes
 * limiting an image width
+* preventing text selection
+* column layout
 
 ~~~
 
 item)
 
-The **box model** looks like this:
+The **box model** used to represent a node looks like this:
 
 ![](resources/diagrams/boxmodel.svg)
 
 ~~~
 
-TODO show
+This means that if you apply **padding** it goes inside an eventual border, and will be coloured by the background.
+
+While **margin** won't be, since it is in essence *outside* the element.
 
 ~~
 
@@ -61,18 +44,75 @@ We can **center a block horisontally** in many different ways. Here's a common s
 
 Note that this **only works if the block has a set width**, otherwise it'll take up the full width and we won't see any centering!
 
+
 ~~~
 
 item)
 
-Having a **column layout** used to be difficult, but with **Flexbox** it is suddenly easy!
+There is a distinct possibility you might soon need to **select element via attributes**. This is done using **square brackets**:
 
-Let's say we have this HTML...
+```css
+[data-class=skeleton] {
+  /* spooky styles go here */
+}
+```
+
+See the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for the full available syntax.
+
+~~
+
+item)
+
+We can **limit an image's width** using the `max-` prefixed dimensions:
 
 ```
-<div id="container">
-  <div id="greenblock">...</div>
-  <div id="blueblock">...</div>
-  <div id="redblock">...</div>
-</div>
+.myImage {
+  max-width: 300px;
+  max-height: 400px;
+}
 ```
+
+~~~
+
+item)
+
+When we **use text elements for interaction** we often want to...
+
+* prevent selection
+* make pointer indicate clickability
+
+```
+.myElem {
+  user-select: none;
+  cursor: pointer;
+}
+```
+
+~~
+
+item)
+
+To lay out children of an element as columns we use **flexbox**:
+
+```css
+.container {
+  display: flex;
+  flex-direction: row;
+}
+```
+
+~~~
+
+By default the columns will get equal width. If you have **fixed-width** columns you can make the other columns share the leftover space by giving them:
+
+```
+.columnThatShouldGrow {
+  flex-grow: 1;
+}
+```
+
+~~~
+
+Note that **sized images can behave weirdly** when used as flexbox children.
+
+Prevent this by **wrapping them in a div**!
