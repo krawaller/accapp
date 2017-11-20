@@ -11,6 +11,8 @@ Goal: Publish our app online
 
 TODO - step by step instruction
 
+need to publish the `dist` folder
+
 ~
 
 
