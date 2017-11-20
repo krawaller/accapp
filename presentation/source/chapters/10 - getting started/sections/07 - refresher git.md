@@ -1,13 +1,32 @@
 ---
-title: "Git and Github [TODO: cut down]"
+title: "Git and Github"
 tagline: The tools of the trade
 ---
 
+Chances are very slim that you'll be able to do modern web work without using...
+
+* Git for version controlling and collaboration
+* Github for an online-hosted master Git repo
+
 ~
 
-## First-time setup
+list)
 
-If this is your first time with Git, you will want to start by configuring Git
+Probably you're already up and running (?), but here's a **condenced guide** for common patterns:
+
+* First-time setup
+* The idea of a commit 
+* The commit flow
+* Excluding files
+* Seeing what changed
+* A log of changes
+* Central master repo
+
+~
+
+item)
+
+If this is your first time with Git, you will want to start by **configuring Git**
 to recognize your name and email address.
 
     git config --global user.name "Your Name Here"
@@ -16,18 +35,19 @@ to recognize your name and email address.
 
 ~
 
-With Git, you *make a commit for each change* you wish
+item)
+
+Git centers around the idea of a **commit**. We *make a commit for each change* you wish
 to record in the system
 
 <div class="warning-border">
     Some version control systems keep track of history
     per file. Git versions the whole tree. 
 </div>
+
 ~
 
-list)
-
-### A commit consists of:
+A **commit consists of**:
 
 * A snapshot of all the files
 * A commit message
@@ -35,6 +55,8 @@ list)
 * A date
 
 ~
+
+item)
 
 In Git, committing is a two-step process
 
@@ -45,12 +67,10 @@ In Git, committing is a two-step process
 
 ~
 
-### Adding new files
-
-The `add` command places a file in the staging area
+The `add` command **places a file in the staging area**
 <small>Below is given that the README file exists</small>
 ```diff
-$ git add README
+$ git add README.md
 ```
 The `commit` command then takes the contents of the
 staging area, and creates a commit
@@ -64,9 +84,7 @@ $ git commit
 
 ~
 
-### Committing changes
-
-With existing files, add places the changes to that
+For **existing files**, `add` will place the changes to that
 file into the staging area, so you can commit changes
 with two commands:
 
@@ -83,10 +101,9 @@ $ git commit
 
 ~
 
-<h3 class="lowercase">.gitignore</h3>
+item)
 
-One annoyance is that after building our code,
-the generated files show up in the status output
+We want to avoid tracking **generated files** with Git. Let's say these are created by our build step:
 
 <pre class="custom-code">
     <code># On branch master
@@ -99,7 +116,7 @@ the generated files show up in the status output
 
 ~
 
-The solution is to *add a .gitignore* file
+The solution avoid tracking them is to *add a .gitignore* file
 
 Content for .gitignore
 ```diff
@@ -113,11 +130,15 @@ $ git add .gitignore
 $ git commit
 ```
 
+~~~
+
+The `.gitignore` file won't be of immediate use, but we'll employ it in the **next chapter**.
+
 ~
 
-<h3 class="lowercase">git diff</h3>
+item)
 
-The status command gives you an overview of your changes; diff gives the details
+While `git status` gives you an overview of your changes, **`git diff` shows what changed**.
 ```diff
 $ git diff
 ```
@@ -139,11 +160,17 @@ index 9fe5927..e826a45 100644
 }
 ```
 
+~~
+
+This is so useful that **VSC has a tab for it**:
+
+![](resources/images/gitdiffvsc.png)
+
 ~
 
-<h3 class="lowercase">git log</h3>
+item)
 
-Shows a log of all the commits, most recent commit first
+Typing `git log` shows a log of all the commits, most recent commit first
 
 <pre class="custom-code">
     <code><span class="gold-text">commit e20962ebed7b0288922320f217a6a3ab9371727c</span>
@@ -162,9 +189,8 @@ Date:   Wed Apr 18 17:56:55 2012 +0200
 </pre>
 
 ~
-<h3 class="lowercase">git log</h3>
 
-Has more options than you can possibly imagine;
+The log command has more options than you can possibly imagine;
 one fairly useful one is:
 
 ```diff
@@ -187,9 +213,9 @@ $ git help log
 
 ~
 
-### A central repository
+item)
 
-The most common use of remotes is to set up a central repository
+The most common use of remotes is to set up a **central repository**
 
 <img src="resources/images/a_central_repository.png"
      alt="Merge commits"
@@ -202,56 +228,49 @@ The most common use of remotes is to set up a central repository
 
 ~
 
-### Hosted Git
-
 There are a range of hosted Git services out there,
 which can host your central repository for you
 
-GitHub is the largest today, offering free hosting
+**GitHub** is the largest today, offering free hosting
 for public repositories (used by thousands of open
 source projects) and private hosting for individuals
 and organizations
 
 ~
 
-### Creating a Github account
-
 Creating an account is free, and easy.
 
-Go to `https://github.com/`.
-
-> Follow the directions
+If you haven't already got one, simply go to `https://github.com/` and follow the directions!
 
 ~
 
-### Adding a remote
-
 After creating a repository on GitHub, we need to
-tell our local Git repository about it by adding
-it as a remote
+tell our local Git repository about it by **adding
+it as a remote**:
 
 ```diff
 $ git remote add origin https://github.com/<user>/<repo>.git
 ```
 
-Since you can have multiple remotes, you have to
-specify a name as well as the address
+~~
 
->    The convention used by almost all Git users is to
-     call the central repository remote origin
+Since you **can have multiple remotes**, you have to **specify a name** as well as the address
+
+The convention used by almost all Git users is to give the **central repository** remote the name `origin`, but there's no technical magic to the name.
 
 ~
 
-*Pushing is taking commits we have locally and
-copying them to a remote*
+**Pushing** is taking commits we have locally and
+**copying them to a remote**.
 
-If we have a new, empty, central repository
-then our first push should use the -u flag
+Our **first push** should use the -u flag:
 
 ```diff
 $ git push -u origin master
 ```
 
-<img src="resources/images/dag-the_first_push.png"
-     alt="The first push"
-     class="img_no_border no_margin">
+After that you can simply push:
+
+```bash
+$ git push
+```
