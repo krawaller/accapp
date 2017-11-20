@@ -20,6 +20,8 @@ Download the "Current Version"
 
 Click through the installer.
 
+Make sure to, when given the choice, check that you want to **Add Node to path** (might be phrased slightly differently)
+
 ~
 
 You'll see that node has installed a few things in the start menu:
