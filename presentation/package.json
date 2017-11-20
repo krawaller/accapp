@@ -5,6 +5,7 @@
   "scripts": {
     "build": "mc2",
     "watch": "mc2-watch",
-    "publish": "npm run build && cd slides && git init && git checkout -b gh-pages && git add . && git commit -m 'rebuilt' && git remote add origin https://github.com/krawaller/csharp-ht2017.git && git push -f origin gh-pages"
+    "publish": "npm run build && cd slides && git init && git checkout -b gh-pages && git add . && git commit -m 'rebuilt' && git remote add origin https://github.com/krawaller/csharp-ht2017.git && git push -f origin gh-pages",
+    "republish": "npm run build && cd slides && git add . && git commit -m 'rebuilt' && git push -f origin gh-pages"
   }
 }
