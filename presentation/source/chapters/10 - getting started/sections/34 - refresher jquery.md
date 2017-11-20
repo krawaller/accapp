@@ -126,7 +126,7 @@ $(selectorForParent).append(newCollection);
 
 There's also a reversed syntax:
 
-```
+```javascript
 newCollection.appendTo(selectorForParent);
 ```
 
@@ -178,7 +178,7 @@ Consider an app with **this UI**:
 </ul>
 ```
 
-The contents of the `#options" list will change as the user clicks around.
+The contents of the `#options` list will change as the user clicks around.
 
 ~~~~
 
@@ -186,8 +186,8 @@ Instead of **adding a listener everytime we create an option**, we can have a **
 
 In jQuery we do this by **passing a filtering selector** after the event name to `.on`:
 
-```
-$("#options).on("click", "li", function(e){
+```javascript
+$("#options").on("click", "li", function(e){
   let opt = $(e.target).attr("data-option-id");
   gameEngine.executeOption(opt);
 });
