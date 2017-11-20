@@ -36,7 +36,7 @@ Then **include this in `index.html`** via a script element:
 
 in this file, declare a **`movieData`** variable. This will hold an **object containing the movie data**!
 
-```
+```javascript
 let movieData = {
   // movie info will go here
 };
