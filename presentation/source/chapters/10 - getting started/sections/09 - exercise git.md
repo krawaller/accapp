@@ -26,7 +26,7 @@ item)
 
 **Initialise a git repo** in the project folder by **navigating to it in a terminal** and type:
 
-```
+```bash
 git init
 ```
 
@@ -71,7 +71,7 @@ item)
 
 Now we need to add the Github repo as a **remote** in our local one! In the terminal, while somewhere inside your local gitrepo, type:
 
-```
+```bash
 git remote add origin https://some.url
 ```
 
@@ -85,7 +85,7 @@ We must now tell our local repo to **track the files**!
 
 Since we want to **track everything**, we can cheat by simply doing this...
 
-```
+```bash
 git add .
 ```
 
@@ -97,7 +97,7 @@ item)
 
 The former command will stage the initial state of those files. Let's commit it!
 
-```
+```bash
 git commit -m "initial commit"
 ```
 
@@ -107,7 +107,7 @@ item)
 
 Now we must tell our remote repo about the changes we've made:
 
-```
+```bash
 git push -u origin master
 ```
 
