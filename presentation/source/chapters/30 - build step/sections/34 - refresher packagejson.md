@@ -3,17 +3,32 @@ title: Package.JSON
 tagline: The heart
 ---
 
-Node.js also comes with a package manager:
+Let's take a closer look at npm! We acces it with the `npm` command through Node.js:
+
 ```bash
 $ npm
   
   Usage: npm <command>
 ```
 
+~~
+
+list)
+
+The npm revolves around the **`package.json` file**. Let's explore that! Specifically, we'll look at:
+
+* install packages globally
+* initiate a `package.json` file
+* track dependencies
+* semantic versioning
+* development dependencies
+* scripts
+
 ~
 
-### Installing a package with npm
-To install a package you just type:
+item)
+
+To **install a package** you just type:
 
 ```
 npm install react
@@ -34,31 +49,29 @@ $ npm install -g eslint
 
 ~
 
-We can setup a `package.json` file to track dependencies
-in our project.
+item)
+
+We can setup a **`package.json`** file to **track dependencies in our project**, as well as do **other configurations**.
 
 ~
 
-### Initializing package.json
+**Getting started** with a new project is simple:
 
-Getting started with a new project is simple:
 ```bash
 npm init
 ```
 
-This initializes the folder as an Node.js
-project by creating a package.json in it.
+This initializes the folder as an Node.js project by **creating a package.json in it**.
 
 ~
 
-### package.json
+The result, after you have answered a bunch of questions, might look something like:
 
 ```json
 {
   "name": "Install dependencies example",
   "version": "1.0.0",
   "description": "Project description",
-  "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
@@ -71,10 +84,9 @@ project by creating a package.json in it.
 
 ~
 
-### Let's install a package again
+item)
 
-Using the `--save` flag we can now save the dependency in our
-`package.json`.
+Using the `--save` flag we can **track dependencies** in our `package.json`.
 
 ```
 npm install --save react
@@ -84,9 +96,8 @@ npm install --save react
 
 ~
 
-### Updated package.json
+Here's the `package.json` file after the saved dependency (shortened for convenience):
 
-Shortened for convenience.
 ```json
 {
   "dependencies": {
@@ -102,7 +113,7 @@ Shortened for convenience.
 Note how `react` is now listed as a dependency.
 ~
 
-### sidenote - semantic versioning
+item)
 
 npm uses **Semantic versioning** (also called **semver**)
 
@@ -132,26 +143,25 @@ include:
             # (1.2.4 OK, but not 1.3.0)
 ```
 
+~~
+
 There's a giant heap of these. Check the following URL for the spec:
 
 https://docs.npmjs.com/misc/semver
 ~
 
-### Dependencies just for development
+item)
 
-npm thought of this with the `--save-dev` flag.
+We can mark some dependencies as **development-specific** with the `--save-dev` flag:
 
 ```
 npm install --save-dev mocha
 ```
 
-Let's look at the `package.json` once again.
-
 ~
 
-### Now with two kinds of dependencies
+Let's look at the resulting `package.json`:
 
-Again, just showing the important stuff.
 ```json
 {
   "dependencies": {
@@ -169,8 +179,7 @@ Again, just showing the important stuff.
 
 question)
 
-I just cloned a repo with a `package.json` file. Since the `node_modules`
-folder is ignored, how do I actually install the dependencies?
+I just cloned a repo with a `package.json` file. Since the `node_modules` folder is ignored, how do I actually install the dependencies?
 
 ~
 
@@ -178,15 +187,14 @@ answer)
 
 Simple. You just run `npm install`!
 
-This command will download all the `dependencies` and `devDependencies`
-and place them in a `node_modules` folder.
+This command will download all the `dependencies` and `devDependencies` and place them in a `node_modules` folder.
 
 
 ~
 
-### Adding a script
+item)
 
-Runnable scripts can be added as a `json` property in `package.json`
+Runnable **scripts** can be added as a `scripts` property in `package.json`
 
 ```json
 {
@@ -200,13 +208,10 @@ Runnable scripts can be added as a `json` property in `package.json`
 
 ~
 
-### Running scripts
-
-npm uses a command called `run`:
+Once a script is registered like that, we can run it like this:
 
 ```
 npm run printme
 ```
 
-This just runs our pointless command that we defined in `printme`
-
+This just runs our pointless command that we defined in `printme`. You'll use it for more useful stuff in the build step coming in later!

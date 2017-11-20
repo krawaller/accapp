@@ -9,7 +9,7 @@ Goal: define building and dependencies in the project
 
 ~~
 
-The current approach has **two big downsides**:
+Currently our project has **two big downsides**:
 
 * LESS must be **globally installed**
 * You must **know how to generate** the CSS file
@@ -28,13 +28,19 @@ list)
 
 item)
 
-Create package.json WOO
+Create a package.json by typing...
+
+```bash
+npm init
+```
+
+...in the root of your project!
 
 ~~ 
 
 item)
 
-add less local woo
+Now let's **add `less` as a local dependency**:
 
 ```
 npm install --save-dev less
@@ -44,9 +50,9 @@ npm install --save-dev less
 
 item)
 
-build script
+After that we can register a **local command** to **generate our less file**:
 
-```
+```bash
 {
   "scripts": {
     "build": "lessc styles.less styles.css"
@@ -54,17 +60,17 @@ build script
 }
 ```
 
-yada uses local in `.bin` yada lbah
+Of course, make sure the names match your CSS file.
 
 ~~~~
 
 Now, in a terminal in the project folder, try...
 
-```
+```bash
 npm run build
 ```
 
-...and make sure the CSS file is regenerated!
+...and make sure the CSS file is properly regenerated!
 
 ~~~
 

@@ -22,7 +22,7 @@ Battleplan:
 
 item)
 
-First we **install LESS globally**:
+First we **install LESS globally**! Type this in a terminal:
 
 ```
 npm install -g less
@@ -44,7 +44,7 @@ If you see a LESS version number, you're ok!
 
 item)
 
-Now we need to **add a LESS file**! Simply **copy the CSS file** but call it `.less` instead.
+Now we need to **add a LESS file**! Simply **copy the CSS file** in your project, and give the copy the ending `.less` instead.
 
 ![](resources/images/lessfile.png)
 
