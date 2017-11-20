@@ -21,7 +21,8 @@ Let's fix this!
 list)
 
 * Add a `package.json` file
-* Add `LESS` as a local devDep
+* Add `less` as a local devDep
+* Add a `.gitignore` file to prevent tracking of `node_modules`
 * Add a buildscript
 
 ~~
@@ -50,12 +51,36 @@ npm install --save-dev less
 
 item)
 
-After that we can register a **local command** to **generate our less file**:
+Because we have local dependencies, we now have a **`node_modules`** folder.
+
+![](resources/images/nodemodules.png)
+
+Since this is just 3rd party code, we **don't want to track it** with Git!
+
+~~
+
+We prevent this by **adding a `.gitignore` file** in the root of our folder.
+
+![](resources/images/gitignore.png)
+
+~~~
+
+This file should contain **paths to all files and directories** that we wish to **ignore**. So far, that's just the node modules directory!
+
+```
+node_modules
+```
+
+~~
+
+item)
+
+Let's now register a **local command** to **generate our less file**:
 
 ```bash
 {
   "scripts": {
-    "build": "lessc styles.less styles.css"
+    "styles": "lessc styles.less styles.css"
   }
 }
 ```
@@ -67,7 +92,7 @@ Of course, make sure the names match your CSS file.
 Now, in a terminal in the project folder, try...
 
 ```bash
-npm run build
+npm run styles
 ```
 
 ...and make sure the CSS file is properly regenerated!
@@ -78,6 +103,7 @@ npm run build
 
 You are done when...
 
-* LESS is locally installed (`node_modules/less`)
-* The build script regenerates the CSS
+* LESS is locally installed (in `node_modules/less`)
+* `node_modules` isn't tracked by Git
+* Typing `npm run styles` regenerates the CSS
 
