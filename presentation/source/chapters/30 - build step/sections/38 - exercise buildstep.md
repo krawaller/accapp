@@ -41,7 +41,7 @@ npm init
 
 item)
 
-Now let's **add `less` as a local dependency**:
+Now let's **add `less` as a local development dependency**:
 
 ```
 npm install --save-dev less

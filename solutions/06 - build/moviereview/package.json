@@ -8,6 +8,7 @@
   "author": "Tuffvid",
   "license": "ISC",
   "devDependencies": {
+    "less": "^2.7.3",
     "webpack": "^3.8.1"
   }
 }

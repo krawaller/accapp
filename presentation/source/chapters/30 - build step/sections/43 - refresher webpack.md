@@ -54,14 +54,20 @@ module.exports = {
 ...and **import it** in `code.js`:
 
 ```
-let movieData = require("./data.js");
+let movieData = require("./data");
 
 renderMovie(movieData);
 ```
 
 ~~~
 
-This way of working has many advantages;
+Note that we **have to write the path as `"./data"`**.
+
+If we write it as `"data"`, npm will assume we mean a **3rd party module within `node_modules`** and look there instead!
+
+~~~
+
+Working with modules in this way has many advantages;
 
 * It becomes **clear what a file exports and imports**
 * Files are executed in **separate scopes**
