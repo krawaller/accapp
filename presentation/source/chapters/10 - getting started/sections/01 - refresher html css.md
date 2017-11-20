@@ -57,7 +57,7 @@ There is a distinct possibility you might soon need to **select element via attr
 }
 ```
 
-See the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for the full available syntax.
+See the [MDN rating docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for the full available syntax.
 
 ~~
 

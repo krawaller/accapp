@@ -1,5 +1,5 @@
 ---
-title: "Exercise - add user rating [TODO - screenshot]"
+title: "Exercise - add user rating"
 tagline: Because your opinion matters
 ---
 
@@ -23,7 +23,7 @@ item)
 
 Let's add a **ratings row** to the review! Here's what we want:
 
-TODO - screenshot
+![](resources/images/rating.png)
 
 ~~~~
 
@@ -57,16 +57,15 @@ selectorForEmptyStars {
 
 ...what the **selectors for filled and empty** should be? Up to you! :)
 
-You could for example...
+The easiest way is probably to **add a `starX` id** to each star, where `X` is the number 1-5. Then use that id to select the star as necessary.
 
-* have grey as default and then apply a **`filled` class** to all filled stars
-* apply a **grade class to the ratings row** (`grade1`, `grade2` etc) and find filled stars using `nth-child`
+But there are **many ways** to solve this problem!
 
 ~~~
 
 item)
 
-In our `code.js` file, create a `changeStarRating` func! It should take a grade and manipulate the DOM accordingly:
+In our `code.js` file, create a `changeStarRating` func! It should take a grade between 1-5, and manipulate the DOM accordingly:
 
 ```
 function changeStarRating(grade){
@@ -96,5 +95,5 @@ Clicking on the first star should trigger `changeStarRating(1)`, etc.
 
 You are done when...
 
-* There's a second row of stars
+* There's a row of stars
 * Clicking a star fills all stars to that point
