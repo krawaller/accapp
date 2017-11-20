@@ -77,12 +77,20 @@ let movieData = {
 
 ~~~~
 
-Keep adding the other pieces of data to the object until **nothing remains in the HTML template**!
+Keep adding the other pieces of data to the object until **no data remains in the HTML template**!
 
-The **list of actors** should end up as an **array of strings**:
+~~
+
+The **list of actors** should end up as an **array of strings**...
 
 ```javascript
 ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy"]
+```
+
+...and the HTML list should be an **empty `ul`**:
+
+```html
+<ul></ul>
 ```
 
 ~~ 
