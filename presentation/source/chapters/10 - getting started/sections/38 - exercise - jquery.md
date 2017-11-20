@@ -57,3 +57,35 @@ You are done when...
 * The app looks and works the same
 * We're using jQuery throughout
 
+~~
+
+As a **stretch task**: Although the performance is rarely an issue, it is considered bad form to **reselect the same element** when we don't really have to.
+
+This can be fixed by **caching selected elements**.
+
+~~
+
+For example, inside `renderMovie`, we probably do something like:
+
+```
+$(".movietitle").text(movieData.title);
+```
+
+But the `$(".movietitle")` selector will return the same thing each time!
+
+~~
+
+We can therefore **do all selections** in the bootstrapping part...
+
+```
+let ui = {
+  title: $(".movietitle"),
+  // rest here...
+}
+```
+
+...and instead use that inside the functions:
+
+```
+ui.title.text(movieData.title);
+```
