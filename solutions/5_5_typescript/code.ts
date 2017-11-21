@@ -1,4 +1,4 @@
-import movieData from "./data";
+import {movieData} from "./data";
 import * as $ from "jquery";
 import { Review } from "./interfaces";
 
