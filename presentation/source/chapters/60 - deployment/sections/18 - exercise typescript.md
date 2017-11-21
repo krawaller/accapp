@@ -7,9 +7,9 @@ In this first TS exercise we'll **install TypeScript**!
 
 ~~~
 
-Specifically, we will:
-
 list)
+
+Specifically, we will:
 
 * Get dependencies
 * TypeScriptify code files
@@ -37,6 +37,8 @@ Now we need to **turn our files into typescript files**!
 
 First, simply **rename them to `.ts`**!
 
+![](resources/images/tsfiles.png)
+
 ~~~
 
 We also have to use **`import`/`export` syntax**.
@@ -62,7 +64,13 @@ import * as $ from "jquery";
 
 item)
 
-Next we need to **configure TypeScript**. Add a new file with the magical name **`tsconfig.json`**, and paste this into it:
+Next we need to **configure TypeScript**. Create a new file with the magical name **`tsconfig.json`**:
+
+![](resources/images/tsconfigfile.png)
+
+~~~
+
+In that file put **this content**:
 
 ```json
 {
@@ -93,16 +101,10 @@ First we need to **change the `entry`** from `code.js` to `code.ts` since we ren
 Next we must tell WebPack to **care about `.ts` files**, otherwise it'll just ignore them! This is done with a **`resolve`** key, like this:
 
 ```javascript
-module.exports = {
-  entry: './code.ts',
-  output: {
-    filename: 'distribution/bundle.js'
-  },
   resolve: {
     extensions: ['.ts']
   }
-}
-``
+```
 
 ~~~
 
