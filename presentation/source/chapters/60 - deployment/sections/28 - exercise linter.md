@@ -1,6 +1,7 @@
 ---
 title: Exercise - ESLint [TODO - finish]
 tagline:
+draft: true
 ---
 
 <div class="goal"></div>

@@ -1,5 +1,5 @@
 ---
-title: Netlify [TODO - create]
+title: Netlify
 tagline:
 ---
 
@@ -25,3 +25,4 @@ It's not just a pure hosting service though - the beautiful thing is that it...
 
 ~~
 
+And we'll go fix it right now, with step-by-step instructions in the exercise!

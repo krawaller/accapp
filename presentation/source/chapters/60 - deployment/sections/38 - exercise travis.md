@@ -1,5 +1,6 @@
 ---
 title: CI exercise [TODO - cut down]
+draft: true
 ---
 
 In this exercise we'll look at a couple of different CI options.

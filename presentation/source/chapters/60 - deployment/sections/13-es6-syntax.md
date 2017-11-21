@@ -1,6 +1,7 @@
 ---
 title: ES2015 syntax
 tagline: ''
+draft: true
 ---
 
 ES2015 is arguably the most notable update that ECMAScript (and hence,

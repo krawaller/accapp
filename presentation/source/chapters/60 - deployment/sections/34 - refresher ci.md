@@ -1,6 +1,7 @@
 ---
 title: Continuous integration and Travis [TODO - cut down]
 tagline:
+draft: true
 ---
 
 Travis CI offers both cloud hosted and self-hosted options.
