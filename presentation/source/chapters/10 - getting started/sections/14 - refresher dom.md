@@ -80,13 +80,13 @@ node.classList.contains("someClass") // true or false
 We can **change the text content of a node**...
 
 ```javascript
-node.textContent = "Hello world!";
+node.innerText = "Hello world!";
 ```
 
 ...or **HTML content**:
 
 ```javascript
-node.textContent = "<strong>Hello world!</strong>";
+node.innerHTML = "<strong>Hello world!</strong>";
 ```
 
 In both cases we **erase eventual previous content**.
