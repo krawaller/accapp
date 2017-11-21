@@ -73,10 +73,12 @@ On that screen, in the **Site information** section, hit **Change site name**:
 
 ~~
 
-Now for the magic - if you change your name to `myawesomereviewsite`, then...
+Now for the magic - if you change your site name to `myawesomereviewsite`, then...
 
 * your site is visitable at **`http://myawesomereviewsite.netlify.com`**
 * it **updates whenever you push to Github**!
+
+But, since I've already used `myawesomereviewsite`, you'll have to pick something else! :)
 
 ~~
 
