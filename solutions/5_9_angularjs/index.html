@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>My awesome movie review site</title>
+</head>
+<body ng-app="reviewApp" >
+  <div ng-controller="reviewController" class="container">
+    <div>
+        <img class="poster" ng-src="{{movie.imgUrl}}">
+    </div>
+    <div class="infosection">
+        <h1>{{movie.title}}</h1>
+        <div class="stars">
+          <!-- the stars can be done with ng-repeat instead! :) -->
+          <span ng-class="{filled: rating >= 1}" ng-click="changeStarRating(1)">&#9733;</span>
+          <span ng-class="{filled: rating >= 2}" ng-click="changeStarRating(2)">&#9733;</span>
+          <span ng-class="{filled: rating >= 3}" ng-click="changeStarRating(3)">&#9733;</span>
+          <span ng-class="{filled: rating >= 4}" ng-click="changeStarRating(4)">&#9733;</span>
+          <span ng-class="{filled: rating >= 5}" ng-click="changeStarRating(5)">&#9733;</span>
+        </div>
+        <p>{{movie.description}}</p>
+        <ul>
+          <li ng-repeat="actor in movie.actors">{{actor}}</li>
+        </ul>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
