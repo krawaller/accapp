@@ -11,7 +11,7 @@ Here is an overview of the **different JavaScript versions**:
 
 question)
 
-So, just **how small is ES7** actually? Err, I mean **ES2015**.
+So, just **how small is ES7** actually? Err, I mean **ES2016**.
 
 ~~~~
 
@@ -54,11 +54,11 @@ Formal description [here](https://tc39.github.io/process-document/)
 
 So **what's in the pipe**?
 
-* [Stage 0 list](https://github.com/tc39/proposals/blob/master/finished-proposals.md) (16)
-* [Stage 1-3](https://github.com/tc39/proposals) (17, 9, 10)
+* [Stage 0 list](https://github.com/tc39/proposals/blob/master/finished-proposals.md) (23)
+* [Stage 1-3](https://github.com/tc39/proposals) (26, 7, 16)
 * [Stage 4](https://github.com/tc39/proposals/blob/master/finished-proposals.md) (7, not counting ES2016)
 
-(counts valid as of April 24th)
+(counts valid as of November 3rd 2017)
 
 ~~~~
 
