@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "builddist": "cd solutions/4_8_distribution && npm run build"
+    "builddist": "cd solutions/4_8_distribution && npm install && npm run build"
   }
 }
