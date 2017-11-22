@@ -1,12 +1,13 @@
 
-import {movieData} from "./data";
+import {movieData1, movieData2} from "./data";
 import {Review} from "./interfaces";
 import * as angular from "angular";
 
 let app = angular.module("reviewApp", []);
 
 app.controller("appController", function(){
-  this.movie = movieData;
+  this.movie1 = movieData1;
+  this.movie2 = movieData2;
 });
 
 app.component("review", {
