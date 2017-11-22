@@ -38,7 +38,7 @@ npm install --save angular
 We'll also want to **fix the typings**! First we install them...
 
 ```bash
-npm install --save-dev @typings/angular
+npm install --save-dev @types/angular
 ```
 
 ...and then we **register them in `tsconfig.json`**:
