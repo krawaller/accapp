@@ -9,9 +9,9 @@ We'll **let our existing jQuery logic stay** for now.
 
 ~~
 
-Here's the battle plan:
-
 list)
+
+Here's the battle plan:
 
 * install angular
 * create minimal app and controller
@@ -71,7 +71,7 @@ item)
 
 Finally, let's hook this up to the HTML in `index.html`!
 
-First, use **`ng-app`** tell AngularJS to start the app in the `body`:
+First, use **`ng-app`** to tell AngularJS to start the app in the `body`:
 
 ```html
 <body ng-app="reviewApp">
