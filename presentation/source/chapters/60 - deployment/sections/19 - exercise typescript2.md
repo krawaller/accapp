@@ -3,6 +3,16 @@ title: Exercise - Using TypeScript
 tagline: Reaping the rewards
 ---
 
+
+<div class="goal"></div>
+
+Goal: Employ TypeScript power in our code
+
+
+~~
+
+Here's the plan:
+
 list)
 
 * Utilize ES6 syntax

@@ -3,7 +3,10 @@ title: Exercise - Converting to TypeScript
 tagline:
 ---
 
-In this first TS exercise we'll simply **install TypeScript**!
+
+<div class="goal"></div>
+
+Goal: Install TypeScript
 
 ~~~
 

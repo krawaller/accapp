@@ -3,6 +3,12 @@ title: Exercise - installing AngularJS
 tagline:
 ---
 
+<div class="goal"></div>
+
+Goal: Install AngularJS
+
+~~
+
 In this exercise we'll just **install angular** and make sure it's working.
 
 We'll **let our existing jQuery logic stay** for now.
