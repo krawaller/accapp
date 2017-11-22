@@ -53,6 +53,16 @@ Run `npm run copyindex` in the terminal to see if it works!
 
 ~~
 
+**<span style="color: red;">WARNING!</span>**
+
+The `cp` command does *not* work in normal Windows terminals!
+
+But, since Linux is standard on web servers, we **need to use this syntax**.
+
+To get around this: Use the **Git bash** terminal, that speaks Linux! :)
+
+~~
+
 item)
 
 The `distribution` folder is now full of generated files, which we **don't want to track**. 
