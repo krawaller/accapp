@@ -3,7 +3,7 @@ title: Exercise - Converting to TypeScript
 tagline:
 ---
 
-In this first TS exercise we'll **install TypeScript**!
+In this first TS exercise we'll simply **install TypeScript**!
 
 ~~~
 
