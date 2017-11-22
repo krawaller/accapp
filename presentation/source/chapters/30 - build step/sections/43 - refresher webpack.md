@@ -78,11 +78,9 @@ Working with modules in this way has many advantages;
 Note that there is also an **ES6 version** of the module syntax. In **`data.js`** we'd **export** it like so...
 
 ```
-const movieData = {
+export const movieData = {
   title: 'Inception', // etc
 };
-
-export movieData;
 ```
 
 ...and then in `code.js` we'd **import** like this:
