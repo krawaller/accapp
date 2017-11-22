@@ -11,9 +11,9 @@ Goal: Employ TypeScript power in our code
 
 ~~
 
-Here's the plan:
-
 list)
+
+Here's the plan:
 
 * Utilize ES6 syntax
 * Add a type for our review data

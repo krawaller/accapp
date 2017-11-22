@@ -105,7 +105,7 @@ Next we must tell WebPack to **care about `.ts` files**, otherwise it'll just ig
 
 ```javascript
   resolve: {
-    extensions: ['.ts']
+    extensions: ['.ts', '.js']
   }
 ```
 
