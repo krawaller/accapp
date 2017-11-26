@@ -2,6 +2,6 @@ digraph {
   rankdir = LR
   bgcolor = transparent
   TypeScript -> compiler -> JavaScript
-  JavaScript [label="JavaScript (ES6)"]
+  JavaScript [label="JavaScript (ES5)"]
   compiler [shape="box"]
 }

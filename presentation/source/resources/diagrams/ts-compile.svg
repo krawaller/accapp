@@ -26,7 +26,7 @@
 <!-- JavaScript -->
 <g id="node3" class="node"><title>JavaScript</title>
 <ellipse fill="none" stroke="black" cx="306" cy="-18" rx="69.5752" ry="18"/>
-<text text-anchor="middle" x="306" y="-13.8" font-family="Times,serif" font-size="14.00">JavaScript (ES6)</text>
+<text text-anchor="middle" x="306" y="-13.8" font-family="Times,serif" font-size="14.00">JavaScript (ES5)</text>
 </g>
 <!-- compiler&#45;&gt;JavaScript -->
 <g id="edge2" class="edge"><title>compiler&#45;&gt;JavaScript</title>
