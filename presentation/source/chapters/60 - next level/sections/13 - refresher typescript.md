@@ -19,12 +19,9 @@ The **catchphrase** for [TypeScript](https://www.typescriptlang.org/) is...
 
 The browsers can't understand TypeScript, however, so we must **compile** it before we serve it:
 
-![](resources/images/ts-compile.svg)
+![](resources/diagrams/ts-compile.svg)
 
 Conceptually the **same as we did for LESS**!
-
-~~~
-
 
 ~~~
 
