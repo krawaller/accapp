@@ -86,3 +86,9 @@ You are done when...
 
 * The styles are controlled from a LESS file
 * The app still looks as expected in the browser
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Less](https://github.com/krawaller/js-app-solutions/tree/master/less) solution.

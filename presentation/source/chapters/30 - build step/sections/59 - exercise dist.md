@@ -90,3 +90,9 @@ You are done when...
 * There's a `distribution` folder
 * That folder contains no source files
 * You can copy just that folder somewhere else and the app still works
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Distribution](https://github.com/krawaller/js-app-solutions/tree/master/distribution) solution.

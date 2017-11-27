@@ -3,6 +3,12 @@ title: Package.JSON
 tagline: The heart
 ---
 
+<div class="learn"></div>
+
+Learning about **npm and package.json** more in depth.
+
+~~
+
 Let's take a closer look at npm! We acces it with the `npm` command through Node.js:
 
 ```bash

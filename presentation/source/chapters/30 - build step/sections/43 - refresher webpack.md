@@ -3,6 +3,12 @@ title: Webpack
 tagline:
 ---
 
+<div class="learn"></div>
+
+Learning about **Webpack**.
+
+~~
+
 Time to get to know one of the **most important tools**:
 
 <div style="background-color: white;">

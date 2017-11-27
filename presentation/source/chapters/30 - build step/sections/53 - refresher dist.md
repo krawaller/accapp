@@ -3,6 +3,12 @@ title: Distribution files
 tagline: Made to order
 ---
 
+<div class="learn"></div>
+
+The concept of **distribution files**.
+
+~~
+
 question)
 
 Two of these files are **special**. Which?

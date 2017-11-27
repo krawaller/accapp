@@ -105,3 +105,10 @@ You are done when...
 * Doing `npm run bundle` generates a `bundle.js`
 * That's the only script file in `index.html`
 * The app still works like before
+
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Webpack](https://github.com/krawaller/js-app-solutions/tree/master/webpack) solution.

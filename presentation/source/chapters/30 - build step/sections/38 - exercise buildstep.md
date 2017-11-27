@@ -37,6 +37,10 @@ npm init
 
 ...in the root of your project!
 
+~~
+
+This will trigger a bunch of **questions** - just keep hitting `enter` to give the **default answers**.
+
 ~~ 
 
 item)
@@ -107,3 +111,8 @@ You are done when...
 * `node_modules` isn't tracked by Git
 * Typing `npm run styles` regenerates the CSS
 
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Build](https://github.com/krawaller/js-app-solutions/tree/master/build) solution.

@@ -3,6 +3,12 @@ title: CSS preprocessing
 tagline: bells and whistles
 ---
 
+<div class="learn"></div>
+
+Freshen up our **LESS** skills.
+
+~~
+
 Although CSS has grown more powerful, there is still **a lot to be desired**:
 
 * **variables**
