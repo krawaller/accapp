@@ -12,7 +12,7 @@ The idea behind it is to make it **cheaper to merge new code**.
 We accomplish this by **automating all checks possible**. This frequently includes:
 
 * Making sure the **build works**
-* Applying the **linter rules** (more on this soon!)
+* Applying the **linter rules**
 * Running the **unit tests**
 
 ~~
