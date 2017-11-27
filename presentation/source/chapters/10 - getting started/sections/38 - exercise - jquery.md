@@ -59,6 +59,12 @@ You are done when...
 
 ~~
 
+<div class="solution"></div>
+
+If you get stuck, see the [jQuery](https://github.com/krawaller/js-app-solutions/tree/master/jquery) or [jQuery alt](https://github.com/krawaller/js-app-solutions/tree/master/jquery_alt) solutions.
+ 
+~~
+
 As a **stretch task**: Although the performance is rarely an issue, it is considered bad form to **reselect the same element** when we don't really have to.
 
 This can be fixed by **caching selected elements**.

@@ -3,6 +3,12 @@ title: DOM event refresher
 tagline: "Gotta catch 'em all"
 ---
 
+<div class="learn"></div>
+
+Make sure we have **DOM event handling** fresh in our heads.
+
+~~
+
 Another thing we can do with a **node reference** is to **make code run when things happen to it**.
 
 The API for this is simple:

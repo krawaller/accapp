@@ -177,3 +177,9 @@ You are done when...
 ~~
 
 And of course you'll be a good citizen and **keep doing the git flow** while you work! 
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Data](https://github.com/krawaller/js-app-solutions/tree/master/data) solution.

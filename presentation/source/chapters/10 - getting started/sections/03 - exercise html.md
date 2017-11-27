@@ -104,3 +104,9 @@ You are done when...
 
 * double-clicking `index.html` shows the review in a browser
 * it looks ok (don't spend too long!)
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Static](https://github.com/krawaller/js-app-solutions/tree/master/static) solution.

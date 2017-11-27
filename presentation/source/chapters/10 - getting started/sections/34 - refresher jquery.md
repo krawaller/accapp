@@ -3,6 +3,13 @@ title: jQuery refresher
 tagline: What the fuzz is about
 ---
 
+
+<div class="learn"></div>
+
+Reacquaint ourselves with **jQuery**.
+
+~~
+
 You've likely come across **jQuery**, a library that **makes the DOM easier** to work with.
 
 ![](resources/images/jquery.png)

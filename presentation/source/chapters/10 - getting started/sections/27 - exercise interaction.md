@@ -97,3 +97,9 @@ You are done when...
 
 * There's a row of stars
 * Clicking a star fills all stars to that point
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Interaction](https://github.com/krawaller/js-app-solutions/tree/master/interaction) or [Interaction alt](https://github.com/krawaller/js-app-solutions/tree/master/interaction_alt) solutions.

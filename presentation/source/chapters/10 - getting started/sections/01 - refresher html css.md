@@ -3,6 +3,13 @@ title: "CSS refresher"
 tagline: Some useful patterns
 ---
 
+
+<div class="learn"></div>
+
+Make sure we have the **CSS skills** needed for the task ahead.
+
+~~
+
 list)
 
 Let's repeat a few **useful CSS patterns**:

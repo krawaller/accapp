@@ -3,6 +3,12 @@ title: DOM nodes
 tagline: node juggling
 ---
 
+<div class="learn"></div>
+
+Repeating some **DOM node handling** methods.
+
+~~
+
 list)
 
 Let's refresh...

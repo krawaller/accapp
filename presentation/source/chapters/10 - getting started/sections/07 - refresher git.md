@@ -3,6 +3,12 @@ title: "Git and Github"
 tagline: The tools of the trade
 ---
 
+<div class="learn"></div>
+
+Make sure we have an understanding of **Git and Github**.
+
+~~
+
 Chances are very slim that you'll be able to do modern web work without using...
 
 * Git for version controlling and collaboration
