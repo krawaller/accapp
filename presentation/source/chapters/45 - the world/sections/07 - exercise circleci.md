@@ -129,3 +129,10 @@ You are done when...
 
 * CircleCI tries to build and lint your app on every push
 * You are notified via mail when it fails
+
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [CircleCI](https://github.com/krawaller/js-app-solutions/tree/master/circleci) solution.
