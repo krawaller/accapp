@@ -104,6 +104,25 @@ Time to **try this out**! Do a regular **add, commit and push** of your new conf
 
 ~~
 
+Now go back to the **CircleCI dashboard** in the browser and **click `Builds`** in the top left corner. You'll see something like this...
+
+![](resources/images/circleci-running.png)
+
+...which will then turn into **this**:
+
+![](resources/images/circleci-running.png)
+
+~~~
+
+...except if there was a **problem**. Then you'd instead see red, and clicking that would **show the output log**. You'd also get an **email** saying things went belly-up.
+
+Try this by
+
+* making a small lint violation in your LESS file
+* adding, committing and pushing the error
+
+~~
+
 <div class="checklist"></div>
 
 You are done when...

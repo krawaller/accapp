@@ -1,6 +1,6 @@
 {
   "scripts": {
     "publish": "git init && git add . && git commit -m 'rebuilt' && git remote add origin https://github.com/krawaller/js-app-solutions.git && git push -f origin master && rm -rf .git",
-    "pubci": "cd H_circleci && git init && git add . && git commit -m 'rebuilt' && git remote add origin https://github.com/krawaller/testcircleci.git && git push -f origin master && rm -rf .git"
+    "pubci": "cd circleci && git init && git add . && git commit -m 'rebuilt' && git remote add origin https://github.com/krawaller/testcircleci.git && git push -f origin master && rm -rf .git"
   }
 }
