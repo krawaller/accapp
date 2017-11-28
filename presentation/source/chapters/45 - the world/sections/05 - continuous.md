@@ -3,6 +3,13 @@ title: Continuous Integration
 tagline: 
 ---
 
+
+<div class="learn"></div>
+
+Understand what **continuous integration** is and why we do it
+
+~~
+
 In modern JS development, **continuous integration** is a very important term.
 
 The idea behind it is to make it **cheaper to merge new code**.

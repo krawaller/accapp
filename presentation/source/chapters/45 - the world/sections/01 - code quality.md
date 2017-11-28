@@ -10,9 +10,22 @@ Learn about different aspects of **code quality** and **tools** to enforce it.
 
 ~~
 
+So - **code quality**. What do we actually mean?
+
+~~
+
+There's a **top-level distinction** we have to make first: we can talk about the quality of the code...
+
+* ..as it is **written**
+* ..as it is **run**
+
+In this part we're solely concerned about the first point.
+
+~~
+
 list)
 
-So - **code quality**. What do we actually mean? There are (at least) **3 different aspects**:
+Talking about the quality of the code as it is written, there are (at least) **3 different aspects**:
 
 * syntax errors
 * aesthetics

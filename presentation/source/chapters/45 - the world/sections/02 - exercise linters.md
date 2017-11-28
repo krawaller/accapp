@@ -18,6 +18,8 @@ Since we are using **two separate languages** in our project, we need two differ
 
 ~~~
 
+item)
+
 One of the most popular tools for linting CSS is [Stylelint](https://stylelint.io/).
 
 ![](resources/images/stylelint.svg)
@@ -56,7 +58,13 @@ Make sure your command matches what you've chosen to call your style file.
 
 ~~~
 
-To test, **make a change in the LESS file that violates a rule** and run `npm run lintless`:
+To test, **make a change in the LESS file that violates a rule** and run...
+
+```
+npm run lintless
+```
+
+...and you'll see something like:
 
 ![](resources/images/stylelintoutput.png)
 
@@ -88,7 +96,7 @@ We'll need **two new files**:
 
 ~~~
 
-The **configuration in `.eslintrc`** looks like this:
+The **configuratio** in **`.eslintrc`** looks like this:
 
 ```json
 {
