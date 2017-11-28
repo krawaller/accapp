@@ -28,6 +28,14 @@ Stylelint also understands both SASS and LESS.
 
 ~~~
 
+We **install it from npm** as per usual:
+
+```
+npm install --save-dev stylelint
+```
+
+~~
+
 We **configure Stylelint** by adding a **`.stylelintrc`** file:
 
 ![](resources/images/stylelintfile.png)
@@ -39,12 +47,12 @@ Here's what the content looks like:
 ```
 {
   "rules": {
-    "max-empty-lines": 4 /* example rule config */
+    "max-empty-lines": 4
   }
 }
 ```
 
-You can find a [full list of rules](https://stylelint.io/user-guide/rules/) on the Stylelint homepage. Glance through it and **add the rules you like**!
+The `max-empty-lines` rule is just an example. You can find a [full list of rules](https://stylelint.io/user-guide/rules/) on the Stylelint homepage. Glance through it and **add the rules you like**!
 
 ~~~
 
@@ -88,6 +96,15 @@ Ok! Time to make a very similar journey for our **JavaScript**. Our linting tool
 
 ![](resources/images/eslint.png)
 
+~~~
+
+We **install it from npm** as per usual, yet again:
+
+```
+npm install --save-dev eslint
+```
+
+
 ~~
 
 We'll need **two new files**:
@@ -96,16 +113,18 @@ We'll need **two new files**:
 
 ~~~
 
-The **configuratio** in **`.eslintrc`** looks like this:
+The **configuration** in **`.eslintrc`** looks like this:
 
 ```json
 {
   "parserOptions": { "ecmaVersion": 6 },
   "rules": {
-      "quotes": ["error", "double"] /* example rule */
+      "quotes": ["error", "double"]
   }
 }
 ```
+
+Again the `quotes` rule is just an example of what you can do.
 
 See the [full list of ESLint rules](https://eslint.org/docs/rules/) and pick what you like!
 
