@@ -3,6 +3,12 @@ title: More AngularJS
 tagline: An AngularJS cookbook
 ---
 
+<div class="learn"></div>
+
+Learn about the **AngularJS nitty-gritty**
+
+~~
+
 Of course, what we just did didn't accomplish anything (except for making our bundle 10x bigger).
 
 Time to start **actually using AngularJS**!
@@ -37,24 +43,6 @@ app.controller("myawesomecontroller", function($scope){
 ```html
 <div ng-controller="myawesomecontroller">
   <p>{{greeting}}</p>
-</div>
-```
-
-~~
-
-You also saw the **alternate syntax** where we **attach data to `this`**...
-
-```javascript
-app.controller("myawesomecontroller", function(){
-  this.greeting = "Hello world!";
-});
-```
-
-...and we **read values off of an alias**:
-
-```
-<div ng-controller="myawesomecontroller as ctrl">
-  <p>{{ctrl.greeting}}</p>
 </div>
 ```
 
@@ -161,6 +149,8 @@ The solution is to use the **`ng-src` directive** instead:
 item)
 
 Speaking of that - we'll still see **ugly `{{message}}` stuff flash by** elsewhere in our template when the page first shows, before AngularJS has kicked off. The solution is the **`ng-cloak`** directive.
+
+~~~
 
 First, **add this style**:
 

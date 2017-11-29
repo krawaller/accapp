@@ -3,6 +3,12 @@ title: Netlify
 tagline:
 ---
 
+<div class="learn"></div>
+
+Learn about **hosting services**
+
+~~
+
 Meet your new best friend!
 
 ![](resources/images/netlify.jpg)

@@ -3,6 +3,12 @@ title: What comes next?
 tagline: The rest of the story
 ---
 
+<div class="learn"></div>
+
+Learn about **what remains to learn in AngularJS**
+
+~~
+
 You taken a good bite out of **core AngularJS functionality**, but there's so much more we haven't covered.
 
 Let's just walk through some things so you **know what lies ahead**!

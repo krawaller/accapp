@@ -3,6 +3,12 @@ title: TypeScript
 tagline: Fooling the devil
 ---
 
+<div class="learn"></div>
+
+Learn about **TypeScript**
+
+~~
+
 So - 
 
 ![](resources/images/typescript.svg)

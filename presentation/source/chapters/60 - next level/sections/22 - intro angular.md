@@ -3,6 +3,12 @@ title: Intro to AngularJS
 tagline: Your first JS framework!
 ---
 
+<div class="learn"></div>
+
+Learn about **AngularJS**
+
+~~
+
 So! Time to **get to know AngularJS**, a JavaScript **framework** by Google.
 
 ~~~
@@ -144,30 +150,6 @@ And inside of **that**, we can access the values on **`$scope`** via **interpola
 
 ```html
 <p>{{message}}</p>
-```
-
-~~
-
-There is a competing **alternate syntax** for this - we can define our controller to **work with `this`** instead of **`$scope`**:
-
-```javascript
-app.controller("myawesomecontroller", function(){
-  this.message = "Hello world!";
-});
-```
-
-~~~
-
-For this alternate syntax we must connect the controller **slightly differently** by giving it an alias...
-
-```
-<div ng-controller="myawesomecontroller as ctrl">
-```
-
-...and when we interpolate we must **access the variables off of the alias**:
-
-```html
-<p>{{ctrl.message}}</p>
 ```
 
 ~~~~
