@@ -158,3 +158,9 @@ You are done when...
 * The files are `.ts` files
 * Running `npm run bundle` generates a bundle like before
 * The app hasn't changed at all, it still runs
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [TypeScript Start](https://github.com/krawaller/js-app-solutions/tree/master/typescript_start) solution.
