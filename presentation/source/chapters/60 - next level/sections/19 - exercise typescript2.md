@@ -136,3 +136,9 @@ You are done when...
 * You're using some **ES6 feature**
 * You get **intellisense for movie review** data
 * You get **intellisense for jQuery**
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [TypeScript Next](https://github.com/krawaller/js-app-solutions/tree/master/typescript_next) solution.
