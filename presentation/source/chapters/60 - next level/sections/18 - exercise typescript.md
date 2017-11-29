@@ -18,6 +18,7 @@ Specifically, we will:
 * TypeScriptify code files
 * Configure TypeScript
 * Make Webpack use typescript
+* Fix a TS linter
 
 ~~
 
@@ -134,9 +135,75 @@ npm run bundle
 
 ~~~
 
+item)
+
+Final item on the agenda - we must **fix the code linting**!
+
+ESLint doesn't understand TS, so, start by **removing it**! That is,
+
+* **delete `.eslintrc`**
+* **delete `.eslintignore`**
+* **remove it from dependency in package.json**
+
+~~~
+
+Instead we'll be using [TSLint](https://palantir.github.io/tslint/)! So go do:
+
+```
+npm install --save-dev tslint
+```
+~~~
+
+Now **create a file called `tslint.json`** and paste in the following:
+
+```
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {},
+    "rulesDirectory": []
+}
+```
+
+The **`"extends" : ["tslint:recommended"]`** part will give us a whole bunch of sane **defaults**. Remove it if it annoys you. :)
+~~~~
+
+Of course we should **add a few rules of our own choosing too**!
+
+* See the full list at [https://palantir.github.io/tslint/rules/](https://palantir.github.io/tslint/rules/)
+* Pick a few that you like
+* Add them to the `tslint.json` file in the `rules` section
+
+~~~
+
+And as before we must **make VSC aware** of our linter! Find the **`TSLint` extension** in the marketplace tab:
+
+![](resources/images/vsc-tslint.png)
+
+After reloading the VSC window you should now get linting in your ts files!
+
+~~~
+
+Final order of linting business - we must **replace the `lintjs` script** with something using TSLint instead!
+
+```
+   "lintts": "tslint -c tslint.json '*.ts'"
+```
+
+If you have deep folders you might need `tslint -c tslint.json '**/*.ts'` instead.
+
+~~~~
+
+Final final order of linting business -  don't forget to update `.circleci/config.yml` to use this new command! 
+
+~~~
+
 question)
 
-So **what did we actually gain**?
+So, after all this - **what did we actually gain**?
 
 ~~~
 

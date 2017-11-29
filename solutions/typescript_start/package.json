@@ -6,7 +6,8 @@
     "bundle": "webpack",
     "less": "lessc ./styles.less distribution/styles.css",
     "copyindex": "cp index.html distribution/index.html",
-    "build": "npm run bundle && npm run less && npm run copyindex"
+    "build": "npm run bundle && npm run less && npm run copyindex",
+    "lintts": "tslint -c tslint.json '*.ts'"
   },
   "author": "Tuffvid",
   "license": "ISC",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "less": "^2.7.3",
     "ts-loader": "^3.1.1",
+    "tslint": "^5.8.0",
     "typescript": "^2.6.1",
     "webpack": "^3.8.1"
   }
