@@ -113,3 +113,9 @@ You are done when...
 
 * You see the message from AngularJS
 * Nothing else changed
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Angular Start](https://github.com/krawaller/js-app-solutions/tree/master/angular_start) solution.
