@@ -64,6 +64,8 @@ import {movieData} from "./data";
 import * as $ from "jquery";
 ```
 
+For those of you who already used the `import/export` syntax - note how we **must do `import * as $`** for jQuery instead of just ** `import $`**.
+
 ~~~
 
 item)
