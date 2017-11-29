@@ -24,6 +24,9 @@ In the solution bundle for this exercise you'll find yet another version of the 
 
 Your mission is simply to **explore my source code** and see if you can figure out how it all fits together!
 
+[Angular Component](https://github.com/krawaller/js-app-solutions/tree/master/angular_component) solution.
+
+
 And, if you feel adventurous and have the time, **try to employ it in your code**!
 
 ~~~
