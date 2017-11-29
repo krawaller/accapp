@@ -97,3 +97,9 @@ You are done when...
 * The app works exactly like before
 * No `{{ .. }}` ever flash by and there are no silly image 404 errors
 * jQuery has been thrown out
+
+~~
+
+<div class="solution"></div>
+
+If you get stuck, see the [Angular Next](https://github.com/krawaller/js-app-solutions/tree/master/angular_next) solution.
