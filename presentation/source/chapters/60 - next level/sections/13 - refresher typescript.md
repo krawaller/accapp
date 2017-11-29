@@ -40,7 +40,7 @@ Most importantly **types**, as the name suggests.
 We can **add type annotations to variables, parameters and functions**:
 
 ```typescript
-let name: string = 'foo;'
+let name: string = 'foo';
 
 function isAllowedInToTheBar(age: number): boolean {
   return age >= 18;

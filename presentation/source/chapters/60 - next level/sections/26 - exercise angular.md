@@ -64,6 +64,18 @@ Time to **handle the rating selection**! Because AngularJS templates are **data-
 $scope.rating = 0;
 ```
 
+~~~~
+
+Now, with the `rating` in place, we can **dynamically give `filled` classes to the stars** depending on the rating value, using `ng-class`.
+
+For example, the **third star** could look like this:
+
+```html
+<span ng-class="{filled: rating>=3}">&#9733;</span>
+```
+
+~~~
+
 Next we **expose a handler** in which we update that rating:
 
 ```javascript

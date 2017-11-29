@@ -1,6 +1,6 @@
 ---
-title: Exercise - AngularJS Controller
-tagline: Wrestling the beast
+title: Exercise - Controller, take 2
+tagline: Wrestling the beast again
 ---
 
 
