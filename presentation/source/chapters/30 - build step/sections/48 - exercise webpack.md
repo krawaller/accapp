@@ -57,8 +57,10 @@ item)
 Next we need to **import webpack as a local development dependency**!
 
 ```bash
-npm install --save-dev webpack
+npm install --save-dev webpack webpack-cli
 ```
+
+This installs both webpack and **`webpack-cli`**, for using via the terminal.
 
 ~~~
 

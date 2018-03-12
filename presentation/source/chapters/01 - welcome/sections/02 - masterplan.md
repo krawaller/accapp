@@ -3,13 +3,19 @@ title: "The masterplan"
 tagline: "tajmad och klar <span style='text-decoration: line-through;'>in i minsta detalj</span>"
 ---
 
+<div class="learn"></div>
+
+Synchronizing expectations for the course
+
+~~
+
 So - for the next 3 days, we'll talk about
 
 * **JS app development**
 * ...but we'll splice in some **general JS fu**...
 * ...including the **build step**,
-* ...some **AngularJS**,
-* ...and lots of surrounding stuff
+* ...leading up to **AngularJS**,
+* ...and lots of stuff in between
 
 ~~~
 
@@ -24,7 +30,7 @@ My **unofficial goal** is that you should be able to **chat up a web developer i
 
 ~~~~
 
-These slides are available at [http://blog.krawaller.se/csharp-ht2017/](http://blog.krawaller.se/csharp-ht2017/)
+These slides are available at [http://blog.krawaller.se/csharp-vt2018/](http://blog.krawaller.se/csharp-vt2018/)
 
 Or put a `print.html` at the end of the above for a **print-friendly version**.
 

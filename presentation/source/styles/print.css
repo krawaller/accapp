@@ -1,0 +1,74 @@
+
+.equality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equality img {
+  border: 0;
+  height: 140px;
+  display: inline-block;
+  background: none;
+  box-shadow: none;
+}
+
+.equality span {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 70px;
+}
+
+.goal:before {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100px;
+  margin: 20px auto;
+  text-align: center;
+  content: "🎯"
+}
+
+.checklist:before {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100px;
+  margin: 20px auto;
+  text-align: center;
+  content: "🏁"
+}
+
+.solution:before {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100px;
+  margin: 20px auto;
+  text-align: center;
+  content: "♿"
+}
+
+.learn:before {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100px;
+  margin: 20px auto;
+  text-align: center;
+  content: "⛩"
+}
+
+.checklist ~ ul > li {
+  list-style-type: none;
+}
+
+.checklist ~ ul > li:before {
+  display: inline-block;
+  margin-right: 10px;
+  content: "✅"
+}

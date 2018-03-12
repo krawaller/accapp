@@ -3,6 +3,13 @@ title: The Web platform
 tagline: a.k.a. the holy trinity
 ---
 
+
+<div class="learn"></div>
+
+The web whatnow?
+
+~~
+
 The **Web platform** is really the combination of three separate technologies:
 
 ![](resources/diagrams/platform.svg)

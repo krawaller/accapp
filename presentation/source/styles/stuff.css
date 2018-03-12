@@ -89,3 +89,17 @@
   box-shadow: none;
 }
 
+
+body .reveal section .whitebg img {
+  background-color: #EEE;
+}
+
+.reveal section img[alt=dot] {
+  background-color: #EEE;
+  border-radius: 13px;
+  padding: 7px;
+}
+
+body .reveal section img.img_no_background {
+  background-color: transparent;
+}

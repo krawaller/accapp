@@ -5,7 +5,35 @@ tagline: The preacher
 
 Let's **start with the most important** - me!
 
-![](resources/diagrams/me.svg)
+```dot
+digraph {
+  rankdir = LR
+  bgcolor = transparent
+
+  David [label="David\nWaller"]
+
+  singing -> David
+  boardgames -> David
+  metal -> David
+
+  David -> teacher
+  David -> programmer
+
+  teacher -> Edument
+  programmer -> Edument
+
+  programmer -> JS [dir=none]
+  teacher -> subs [dir=none]
+
+  JS,subs [shape=box]
+
+  subs [label="maths, Swedish,\nprogramming"]
+
+  {rank=same;programmer,JS}
+  {rank=same;teacher,subs}
+
+}
+```
 
 ~~~
 

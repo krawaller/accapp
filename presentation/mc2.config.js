@@ -1,5 +1,10 @@
+var dot = require('mc2/dist/plugins/chewDot');
+
 module.exports = {
-  delivery: 'Academy C#, nov 2017',
+  delivery: 'Academy C#, mar 2018',
   title: 'JavaScript app construction',
-  tagline: 'Learning the tools of the trade'
-}
+  tagline: 'Learning the tools of the trade',
+  earlyChewers: [
+    dot.chew
+  ]
+};
