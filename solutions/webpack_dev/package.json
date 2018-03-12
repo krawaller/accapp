@@ -1,0 +1,21 @@
+{
+  "name": "moviereview_4_x",
+  "version": "1.0.1",
+  "description": "",
+  "scripts": {
+    "styles": "lessc styles.less styles.css",
+    "bundle": "webpack",
+    "start:dev": "webpack-dev-server"
+  },
+  "author": "Tuffvid",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-notifier": "^1.6.0"
+  }
+}
