@@ -1,6 +1,6 @@
 {
   "name": "moviereview_4_6",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "styles": "lessc styles.less styles.css",
@@ -9,9 +9,10 @@
   "author": "Tuffvid",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "webpack": "^3.8.1"
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
   }
 }

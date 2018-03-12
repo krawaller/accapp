@@ -15,12 +15,7 @@
     <div class="infosection">
         <h1>{{movie.title}}</h1>
         <div class="stars">
-          <!-- the stars can be done with ng-repeat instead! :) -->
-          <span ng-class="{filled: rating >= 1}" ng-click="changeStarRating(1)">&#9733;</span>
-          <span ng-class="{filled: rating >= 2}" ng-click="changeStarRating(2)">&#9733;</span>
-          <span ng-class="{filled: rating >= 3}" ng-click="changeStarRating(3)">&#9733;</span>
-          <span ng-class="{filled: rating >= 4}" ng-click="changeStarRating(4)">&#9733;</span>
-          <span ng-class="{filled: rating >= 5}" ng-click="changeStarRating(5)">&#9733;</span>
+          <span ng-repeat="i in [1,2,3,4,5]" ng-class="{filled: rating >= i}" ng-click="changeStarRating(i)">&#9733;</span>
         </div>
         <p>{{movie.description}}</p>
         <ul>
