@@ -109,16 +109,54 @@ With such as setup we'd **point Webpack to the entry file**. It'll then start th
 
 We do this in a **configuration file** with the magical name **`webpack.config.js`**. This file should **export a config object**:
 
-```
+```javascript
 module.exports = {
-  entry: './code.js',
+  mode 'development', // whether we're building for dev or prod
+  entry: './code.js', // which file to begin with
   output: {
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "."), // what folder to put bundle in
+    filename: 'bundle.js' // what name to use for bundle
   }
 };
 ```
 
 There are of course **many more config options**!
+
+~~
+
+question)
+
+...wait, what was this thing?
+
+```javascript
+path.resolve(__dirname, ".")
+```
+
+Where did `path` come from, and what is `__dirname`?
+
+~~~
+
+answer)
+
+Well! **`__dirname`** is a global variable in Node, pointing to the **current directory**.
+
+Node has many things like that - just like the browser has `document` etc!
+
+~~ 
+
+And **`path`** is a **build-in helper** in node for adding parts of a path together! We bring it in like so:
+
+```javascript
+var path = require("path");
+```
+
+And then we can do...
+
+```javascript
+path.resolve(firstPart, secondPart, thirdPart)
+```
+
+...without worrying about if we'll end up with double slashes etc.
 
 ~~~
 

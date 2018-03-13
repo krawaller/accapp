@@ -14,8 +14,9 @@ list)
 Here's the plan:
 
 * **tweak webpack** to output into distribution folder
+* **tweak webpack dev server** to work from that folder
 * **tweak less** to output into distribution folder
-* add script to **copy `index.html`** into distribution folder
+* add a script to **copy `index.html`** into distribution folder
 * make Git **ignore distribution folder**
 * add **build script** that runs all other scripts
 
@@ -23,9 +24,17 @@ Here's the plan:
 
 item)
 
-We need to **change webpack** so that it **outputs the bundle into the distribution folder** instead.
+We need to **change webpack** so that it **outputs the bundle into the distribution folder** instead:
 
-Simple change the output filename into `distribution/bundle.js`!
+Inside `webpack.config.js`, simply change the `output.path` in the config to `distribution`
+
+~~
+
+item)
+
+We also have to **change webpack dev server** to work from the distribution folder.
+
+Inside `webpack.config.js`, change `devServer.contentBase` to the same thing as `output.path`!
 
 ~~
 
@@ -88,8 +97,9 @@ Try it out, and see if the `distribution` folder is populated as expected.
 You are done when...
 
 * There's a `distribution` folder
-* That folder contains no source files
-* You can copy just that folder somewhere else and the app still works
+* That folder isn't tracked by git
+* Everything the app needs to run is inside that folder
+* That folder contains no other files
 
 ~~
 
