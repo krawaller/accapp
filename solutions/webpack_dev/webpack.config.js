@@ -10,6 +10,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "."),
+    watchContentBase: true,
     port: 9000,
   },
   plugins: [
