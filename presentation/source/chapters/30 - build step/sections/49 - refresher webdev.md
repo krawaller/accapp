@@ -44,12 +44,11 @@ We configure it by **adding a `devServer` part** in the webpack config:
 
 ```
 var path = require("path");
-const WebpackNotifierPlugin = require("webpack-notifier");
 
 module.exports = {
-  // ... other stuff removed ...
+  // ... other stuff excluded ...
   devServer: {
-    contentBase: path.join(__dirname, "."), // the root for the server
+    contentBase: __dirname, // the root for the server
     watchContentBase: true, // so we reload if other stuff like CSS changes
     port: 9000, // it'll now be at http://localhost:9000
   }
