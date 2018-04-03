@@ -1,15 +1,15 @@
-var path = require("path");
+const path = require("path");
 const WebpackNotifierPlugin = require("webpack-notifier");
 
 module.exports = {
   mode: 'development',
-  entry: './code.js',
+  entry: path.resolve(__dirname, 'code.js'),
   output: {
-    path: path.resolve(__dirname, "."),
+    path: __dirname,
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, "."),
+    contentBase: __dirname,
     watchContentBase: true,
     port: 9000,
   },

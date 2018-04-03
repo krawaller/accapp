@@ -112,7 +112,7 @@ We do this in a **configuration file** with the magical name **`webpack.config.j
 ```javascript
 module.exports = {
   mode: 'development', // whether we're building for dev or prod
-  entry: './code.js', // which file to begin with
+  entry: path.resolve(__dirname, 'code.js'), // which file to begin with
   output: {
     path: __dirname, // what folder to put bundle in
     filename: 'bundle.js' // what name to use for bundle
@@ -129,7 +129,7 @@ question)
 ...wait, what was this thing?
 
 ```javascript
-path.resolve(__dirname, ".")
+entry: path.resolve(__dirname, 'code.js')
 ```
 
 Where did `path` come from, and what is `__dirname`?
