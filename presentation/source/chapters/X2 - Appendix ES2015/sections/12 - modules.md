@@ -13,7 +13,7 @@ While **Node modules** followed the **CommonJS module standard**, what was imple
 
 But the **concepts are the same**. While you would do this in **CommonJS**...
 
-```
+```javascript
 // file1.js
 module.exports = {..};
 
@@ -25,7 +25,7 @@ var lib = require("./file1.js");
 
 ...you would do this with **ES modules**:
 
-```
+```javascript
 // file1.js
 export const lib = {..};
 
