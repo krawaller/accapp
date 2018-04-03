@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, "distribution"),
+    contentBase: path.resolve(__dirname, "distribution"),
     watchContentBase: true,
     port: 9000,
   },

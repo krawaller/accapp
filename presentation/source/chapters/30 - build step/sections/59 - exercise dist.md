@@ -26,7 +26,11 @@ item)
 
 We need to **change webpack** so that it **outputs the bundle into the distribution folder** instead:
 
-Inside `webpack.config.js`, simply change the `output.path` in the config to `distribution`
+Inside `webpack.config.js`, simply change the `output.path` in the config to `distribution`:
+
+```javascript
+path: path.resolve(__dirname, "distribution"),
+```
 
 ~~
 
@@ -35,6 +39,10 @@ item)
 We also have to **change webpack dev server** to work from the distribution folder.
 
 Inside `webpack.config.js`, change `devServer.contentBase` to the same thing as `output.path`!
+
+```javascript
+contentBase: path.resolve(__dirname, "distribution"),
+```
 
 ~~
 
