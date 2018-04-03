@@ -1,7 +1,7 @@
 ---
 title: Introduction
 tagline: Setting the scene
-draft: true
+draft: false
 ---
 
 JavaScript time! Woohoo! :)
