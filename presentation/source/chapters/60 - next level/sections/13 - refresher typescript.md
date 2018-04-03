@@ -64,7 +64,7 @@ let willHaveFunTonight = isAllowedInToTheBar(16);
 In other words, **this example code**...
 
 ```typescript
-let name: string = 'foo;'
+let name: string = 'foo';
 ```
 
 ...was **unnecessarily complex**, as **this would be enough**:
