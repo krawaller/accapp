@@ -1,7 +1,10 @@
+let path = require("path");
+
 module.exports = {
-  entry: './code.ts',
+  entry: path.resolve(__dirname, 'code.ts'),
   output: {
-    filename: 'distribution/bundle.js'
+    path: path.resolve(__dirname, 'distribution'),
+    filename: "bundle.js",
   },
   resolve: {
     extensions: ['.ts','.js']
@@ -12,5 +15,5 @@ module.exports = {
       { test: /\.ts$/, loader: 'ts-loader' }
     ]
   },
-  devtool: 'inline-source-map'
+  mode: "development"
 };
