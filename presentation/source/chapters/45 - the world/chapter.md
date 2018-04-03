@@ -1,5 +1,5 @@
 ---
 title: The world
 tagline: because we're a herd species
-draft: true
+draft: false
 ---
