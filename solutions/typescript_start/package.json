@@ -7,18 +7,22 @@
     "less": "lessc ./styles.less distribution/styles.css",
     "copyindex": "cp index.html distribution/index.html",
     "build": "npm run bundle && npm run less && npm run copyindex",
-    "lintts": "tslint -c tslint.json '*.ts'"
+    "lintts": "tslint -c tslint.json '*.ts'",
+    "start:dev": "webpack-dev-server"
   },
   "author": "Tuffvid",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "less": "^2.7.3",
-    "ts-loader": "^3.1.1",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1",
-    "webpack": "^3.8.1"
+    "less": "^3.0.1",
+    "ts-loader": "^4.1.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-notifier": "^1.6.0"
   }
 }

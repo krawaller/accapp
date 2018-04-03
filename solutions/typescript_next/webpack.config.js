@@ -1,10 +1,11 @@
-let path = require("path");
+const path = require("path");
+const WebpackNotifierPlugin = require("webpack-notifier");
 
 module.exports = {
   entry: path.resolve(__dirname, 'code.ts'),
   output: {
     path: path.resolve(__dirname, 'distribution'),
-    filename: "bundle.js",
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: ['.ts','.js']
@@ -15,5 +16,13 @@ module.exports = {
       { test: /\.ts$/, loader: 'ts-loader' }
     ]
   },
-  mode: "development"
+  mode: 'development',
+  devServer: {
+    contentBase: path.resolve(__dirname, 'distribution'),
+    watchContentBase: true,
+    port: 9000,
+  },
+  plugins: [
+    new WebpackNotifierPlugin({alwaysNotify: true}),
+  ],
 };
